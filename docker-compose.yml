@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  eagler-relay:
+    build: .
+    container_name: eaglercraft-relay
+    restart: unless-stopped
+    ports:
+      - "6699:6699"   # Map host port 6699 to container port 6699
